@@ -1,6 +1,6 @@
 {
   "name": "@goranmedic/css-utilities",
-  "version": "1.0.0",
+  "version": "1.0.1-0",
   "description": "Common css utility classes that can be used in any project",
   "style": "src/index.scss",
   "scripts": {
