@@ -1,0 +1,117 @@
+// =================================
+// PADDING
+// =================================
+
+@include padding();
+@include attribute-value-all-sides("none", "padding", 0 !important);
+@include attribute-value-all-sides("auto", "padding", auto);
+
+// =================================
+// MARGIN
+// =================================
+
+@include margin();
+@include attribute-value-all-sides("none", "margin", 0 !important);
+@include attribute-value-all-sides("auto", "margin", auto);
+
+// =================================
+// BORDER
+// =================================
+
+@include border();
+@include attribute-value-all-sides("none", "border", none !important);
+@include colors("border-color");
+
+// =================================
+// BACKGROUND COLOR
+// =================================
+
+@include colors("background-color");
+
+.mod-background-color-white {
+  background-color: $white !important;
+}
+
+
+// =================================
+// BORDER RADIUS
+// =================================
+
+
+@include border-radius();
+
+// =================================
+// FLEXBOX
+// =================================
+
+.mod-display-flex {
+  display: flex;
+}
+
+.mod-display-inline-flex {
+  display: inline-flex;
+}
+
+.mod-flex-grow {
+  flex-grow: 1;
+}
+
+.mod-flex-row {
+  flex-direction: row;
+}
+
+.mod-flex-column {
+  flex-direction: column;
+}
+
+.mod-flex-grow-none {
+  flex-grow: 0;
+}
+
+.mod-flex-shrink {
+  flex-shrink: 1;
+}
+
+.mod-flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.mod-justify-start {
+  justify-content: flex-start;
+}
+
+.mod-justify-center {
+  justify-content: center;
+}
+
+.mod-flex-shrink-none {
+  flex-shrink: 0;
+}
+
+.mod-flow-column {
+  flex-flow: column;
+}
+
+.mod-justify-end {
+  justify-content: flex-end;
+}
+
+.mod-justify-around {
+  justify-content: space-around;
+}
+
+.mod-justify-between {
+  justify-content: space-between;
+}
+
+.mod-align-start {
+  align-items: flex-start;
+}
+
+.mod-align-center {
+  align-items: center;
+}
+
+.mod-align-end {
+  align-items: flex-end;
+}

@@ -1,0 +1,5 @@
+@mixin padding() {
+    @each $name, $value in $padding-values {
+        @include attribute-value-all-sides($name, 'padding', $value);
+    }
+}

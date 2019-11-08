@@ -1,0 +1,21 @@
+$padding-values: (
+    tiny: 5px,
+    small: 10px,
+    default: 15px,
+    large: 20px
+);
+
+$margin-values: (
+    tiny: 5px,
+    small: 10px,
+    default: 15px,
+    large: 20px
+);
+
+$border-values: (
+    1: 1px,
+    2: 2px
+);
+
+$max-border-radius-in-px: 14;
+$border-radius-step: 2;
