@@ -6,9 +6,11 @@
 # How to add styles to your project #
 
 You can add everything by including `./node_modules/@goranmedic/css-utilities/dist/index.css`
-or separate files by including the file you need - for example paddings: `./node_modules/@goranmedic/css-utilities/dist/paddings.css`
+or separate files by including the file you need:
+`./node_modules/@goranmedic/css-utilities/dist/paddings.css` for paddings.
 
 Includes:
+
     * margins from 0 to 50 in increments of 5
     * paddings from 0 to 50 in increments of 5
     * 9 variations of 11 colors
@@ -25,6 +27,7 @@ Includes:
 
 All classes have `.mod-` prefix, followed by attribute and value
 Some examples:
+
     * `margin-top: 20px` is `.mod-margin-top-20` 
     * `margin: 20px` is `.mod-margin-20` 
     * `padding-bottom: 10px` is `.mod-padding-bottom-10` 
