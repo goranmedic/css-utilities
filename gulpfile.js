@@ -1,14 +1,11 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass');
-const cleanCSS = require('gulp-clean-css');
 
-const sassFile = 'src/index.scss';
+const sassFiles = './src/utility/*.scss';
 const cssDest = 'dist/';
 
-
 gulp.task('default', async function(){
-    gulp.src(sassFile)
-        .pipe(sass().on('error', sass.logError))
-        .pipe(cleanCSS())
+    gulp.src(sassFiles)
+        .pipe(sass.sync({outputStyle: 'compressed'}).on('error', sass.logError))
         .pipe(gulp.dest(cssDest));
 });

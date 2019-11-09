@@ -1,0 +1,32 @@
+@import '../settings/settings.scss';
+@import '../tools/tools.scss';
+
+@include font-size();
+
+.mod-text-align-center {
+  text-align: center;
+}
+
+.mod-text-align-end {
+  text-align: end;
+}
+
+.mod-text-align-start {
+  text-align: start;
+}
+
+.mod-text-align-left {
+  text-align: left;
+}
+
+.mod-text-align-right {
+  text-align: right;
+}
+
+.mod-text-align-inherit {
+  text-align: inherit;
+}
+
+.mod-text-align-initial {
+  text-align: initial;
+}

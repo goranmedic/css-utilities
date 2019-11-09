@@ -1,21 +1,24 @@
-$padding-values: (
-    tiny: 5px,
-    small: 10px,
-    default: 15px,
-    large: 20px
-);
+$max-padding-value-in-px: 50;
+$padding-step: 5;
 
-$margin-values: (
-    tiny: 5px,
-    small: 10px,
-    default: 15px,
-    large: 20px
-);
+$max-margin-value-in-px: 50;
+$margin-step: 5;
 
-$border-values: (
-    1: 1px,
-    2: 2px
-);
+$max-border-value-in-px: 5;
+$border-step: 1;
 
 $max-border-radius-in-px: 14;
 $border-radius-step: 2;
+
+$max-font-size-in-px: 36;
+$min-font-size-in-px: 8;
+$font-size-step: 2;
+
+$max-flex-order: 10;
+$flex-order-step: 1;
+
+$max-flex-grow: 10;
+$flex-grow-step: 1;
+
+$max-flex-shrink: 10;
+$flex-shrink-step: 1;

@@ -1,0 +1,5 @@
+@import '../settings/settings.scss';
+@import '../tools/tools.scss';
+
+@include padding();
+@include attribute-value-all-sides("none", "padding", 0 !important);

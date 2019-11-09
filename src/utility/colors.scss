@@ -1,0 +1,14 @@
+@import '../settings/settings.scss';
+@import '../tools/tools.scss';
+
+
+@include colors("background-color");
+@include colors("color");
+
+.mod-background-color-white {
+  background-color: $white !important;
+}
+
+.mod-color-white {
+    color: $white !important;
+  }

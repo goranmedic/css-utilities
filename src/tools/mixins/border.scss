@@ -1,20 +1,21 @@
 @mixin border() {
-    @each $name, $value in $border-values {
-        @include attribute-value-all-sides($name, 'border', #{$value} solid $gray-4);        
+    @for $i from 0 through ceil($max-border-value-in-px / $border-step) {
+        $value: $i * $border-step;
+        @include attribute-value-all-sides($value, 'border', #{$value}px solid $gray-4);  
     }
 }
 
 @mixin border-radius() {
-    @for $i from 1 through $max-border-radius-in-px {
+    @for $i from 0 through ceil($max-border-radius-in-px / $border-radius-step) {
         $value: $i * $border-radius-step;
-        @include attribute-value($value, 'border-radius', #{$value}px);
+        @include attribute-value(border-radius-#{$value}, 'border-radius', #{$value}px);
     }
 }
 
 @mixin border-color() {
     @each $colorListName, $colorName in $color-list {
         @each $name, $value in $colorListName {
-            @include attribute-value(#{$colorName}-#{$name}, 'border-color', $value);
+            @include attribute-value(border-color-#{$colorName}-#{$name}, 'border-color', $value);
         }
     }
 }

@@ -1,7 +1,7 @@
 @mixin colors($attribute) {
     @each $colorListName, $colorName in $color-list {
         @each $name, $value in $colorListName {
-            @include attribute-value(#{$colorName}-#{$name}, $attribute, $value);
+            @include attribute-value(#{$attribute}-#{$colorName}-#{$name}, $attribute, $value);
         }
     }
 }

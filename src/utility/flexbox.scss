@@ -1,0 +1,212 @@
+@import '../settings/settings.scss';
+@import '../tools/tools.scss';
+
+.mod-display-flex{
+  display: flex;
+}
+
+.mod-justify-content-center {
+  justify-content: center;
+}
+
+.mod-justify-content-normal {
+  justify-content: normal;
+}
+
+.mod-justify-content-end {
+  justify-content: end;
+}
+
+.mod-justify-content-start {
+  justify-content: start;
+}
+
+.mod-justify-content-flex-end {
+  justify-content: flex-end;
+}
+
+.mod-justify-content-flex-start {
+  justify-content: flex-start;
+}
+
+.mod-justify-content-left {
+  justify-content: left;
+}
+
+.mod-justify-content-right {
+  justify-content: right;
+}
+
+.mod-justify-content-space-around {
+  justify-content: space-around;
+}
+
+.mod-justify-content-space-between {
+  justify-content: space-between;
+}
+
+.mod-justify-content-space-evenly {
+  justify-content: space-evenly;
+}
+
+.mod-justify-content-stretch {
+  justify-content: stretch;
+}
+
+.mod-justify-content-unset {
+  justify-content: unset;
+}
+
+.mod-justify-content-inherit {
+  justify-content: inherit;
+}
+
+.mod-align-items-baseline {
+  align-items: baseline;
+}
+
+.mod-align-items-center {
+  align-items: center;
+}
+
+.mod-align-items-flex-end {
+  align-items: flex-end;
+}
+
+.mod-align-items-flex-start {
+  align-items: flex-start;
+}
+
+.mod-align-items-stretch {
+  align-items: stretch;
+}
+
+.mod-align-items-inherit {
+  align-items: inherit;
+}
+.mod-align-items-initial {
+  align-items: initial;
+}
+.mod-align-items-unset {
+  align-items: unset;
+}
+
+.mod-align-content-center {
+  align-content: center;
+}
+
+.mod-align-content-flex-end {
+  align-content: flex-end;
+}
+
+.mod-align-content-flex-start {
+  align-content: flex-start;
+}
+
+.mod-align-content-space-around {
+  align-content: space-around;
+}
+
+.mod-align-content-space-between {
+  align-content: space-between;
+}
+
+.mod-align-content-stretch {
+  align-content: stretch;
+}
+
+.mod-flex-flow-column {
+  flex-flow: column;
+}
+.mod-flex-flow-column-reverse {
+  flex-flow: column-reverse;
+}
+.mod-flex-flow-row-reverse {
+  flex-flow: row-reverse;
+}
+
+.mod-flex-flow-row {
+  flex-flow: row;
+}
+
+.mod-flex-flow-inherit {
+  flex-flow: inherit;
+}
+.mod-flex-flow-unset {
+  flex-flow: unset;
+}
+.mod-flex-flow-wrap {
+  flex-flow: wrap;
+}
+.mod-flex-flow-wrap-reverse {
+  flex-flow: wrap-reverse;
+}
+.mod-flex-wrap-nowrap {
+  flex-wrap: nowrap;
+}
+.mod-flex-wrap-unset {
+  flex-wrap: unset;
+}
+.mod-flex-wrap-wrap {
+  flex-wrap: wrap;
+}
+.mod-flex-wrap-wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+.mod-flex-direction-column {
+  flex-direction: column;
+}
+.mod-flex-direction-column-reverse {
+  flex-direction: column-reverse;
+}
+.mod-flex-direction-row-reverse {
+  flex-direction: row-reverse;
+}
+.mod-flex-direction-inherit {
+  flex-direction: inherit;
+}
+.mod-flex-direction-unset {
+  flex-direction: unset;
+}
+.mod-flex-direction-initial {
+  flex-direction: initial;
+}
+
+.mod-align-self-auto {
+  align-self: auto;
+}
+
+.mod-align-self-baseline {
+  align-self: baseline;
+}
+
+.mod-align-self-center {
+  align-self: center;
+}
+
+.mod-align-self-flex-end {
+  align-self: flex-end;
+}
+
+.mod-align-self-flex-start {
+  align-self: flex-start;
+}
+
+.mod-align-self-unset {
+  align-self: unset;
+}
+
+.mod-align-self-initial {
+  align-self: initial;
+}
+.mod-align-self-inherit {
+  align-self: inherit;
+}
+
+.mod-align-self-stretch {
+  align-self: stretch;
+}
+
+@include flex-order();
+@include flex-grow();
+@include flex-shrink();

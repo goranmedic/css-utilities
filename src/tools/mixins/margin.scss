@@ -1,5 +1,6 @@
 @mixin margin() {
-    @each $name, $value in $margin-values {
-        @include attribute-value-all-sides($name, 'margin', $value);
+    @for $i from 0 through ceil($max-margin-value-in-px / $margin-step) {
+        $value: $i * $margin-step;
+        @include attribute-value-all-sides($value, 'margin', #{$value}px);  
     }
 }

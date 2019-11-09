@@ -1,0 +1,6 @@
+@mixin font-size() {
+    @for $i from 0 through ceil(($max-font-size-in-px - $min-font-size-in-px)/$font-size-step) {
+        $value:  $i*$font-size-step + $min-font-size-in-px;
+        @include attribute-value(font-#{$value}, 'font-size', #{$value}px);  
+    }
+}

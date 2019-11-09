@@ -1,5 +1,6 @@
 @mixin padding() {
-    @each $name, $value in $padding-values {
-        @include attribute-value-all-sides($name, 'padding', $value);
+    @for $i from 0 through ceil($max-padding-value-in-px / $padding-step) {
+        $value: $i * $padding-step;
+        @include attribute-value-all-sides($value, 'padding', #{$value}px);  
     }
 }

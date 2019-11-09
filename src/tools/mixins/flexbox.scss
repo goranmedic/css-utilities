@@ -1,0 +1,20 @@
+@mixin flex-order() {
+    @for $i from 0 through ceil($max-flex-order / $flex-order-step) {
+        $value: $i * $flex-order-step;
+        @include attribute-value(flex-order-#{$value}, 'order', #{$value});
+    }
+}
+
+@mixin flex-grow() {
+    @for $i from 0 through ceil($max-flex-grow / $flex-grow-step) {
+        $value: $i * $flex-grow-step;
+        @include attribute-value(flex-grow-#{$value}, 'flex-grow', #{$value});
+    }
+}
+
+@mixin flex-shrink() {
+    @for $i from 0 through ceil($max-flex-shrink / $flex-shrink-step) {
+        $value: $i * $flex-shrink-step;
+        @include attribute-value(flex-shrink-#{$value}, 'flex-shrink', #{$value});
+    }
+}

@@ -1,21 +1,4 @@
 @mixin attribute-value-all-sides($name, $attribute, $value){
-    @if $name == 'default' {
-        .mod-#{$attribute} {
-            #{$attribute}: $value;
-        }
-        .mod-#{$attribute}-left {
-            #{$attribute}-left: $value;
-        }      
-        .mod-#{$attribute}-right {
-            #{$attribute}-right: $value; 
-        }   
-        .mod-#{$attribute}-top {
-            #{$attribute}-top: $value; 
-        }   
-        .mod-#{$attribute}-bottom {
-            #{$attribute}-bottom: $value; 
-        }    
-    } @else {
         .mod-#{$attribute}-#{$name} {
             #{$attribute}: $value; 
         }
@@ -31,17 +14,10 @@
         .mod-#{$attribute}-bottom-#{$name} {
             #{$attribute}-bottom: $value; 
         }    
-    }
 }
 
 @mixin attribute-value($name, $attribute, $value){
-    @if $name == 'default' {
-        .mod-#{$attribute} {
-            #{$attribute}: $value;
-        }
-    } @else {
-        .mod-#{$attribute}-#{$name} {
-            #{$attribute}: $value; 
-        } 
-    }
+    .mod-#{$name} {
+        #{$attribute}: $value; 
+    } 
 }

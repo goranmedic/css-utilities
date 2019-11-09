@@ -7,6 +7,15 @@
     "prepublish": "gulp",
     "test": "echo \"No test specified\""
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goranmedic/css-utilities.git"
+  },
+  "keywords": [
+    "css",
+    "helpers",
+    "utilities"
+  ],
   "files": [
     "dist/"
   ],
@@ -14,7 +23,6 @@
   "license": "MIT",
   "devDependencies": {
     "gulp": "^4.0.2",
-    "gulp-clean-css": "^4.2.0",
     "gulp-sass": "^4.0.2"
   }
 }
