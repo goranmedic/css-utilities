@@ -2,7 +2,7 @@
   "name": "@goranmedic/css-utilities",
   "version": "1.0.1",
   "description": "Common css utility classes that can be used in any project",
-  "style": "src/index.scss",
+  "style": "src/utility/index.scss",
   "scripts": {
     "prepublish": "gulp",
     "test": "echo \"No test specified\""
@@ -21,6 +21,7 @@
   ],
   "author": "Goran Medic",
   "license": "MIT",
+  "homepage": "https://github.com/goranmedic/css-utilities#readme",
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-sass": "^4.0.2"
